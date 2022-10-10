@@ -1,0 +1,196 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* outline: none; */
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+header{
+    background: #333;
+    padding: 10px 0;
+}
+header .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header-content .logo-brand{
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+
+}
+.header-content nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.header-content nav ul#user-information{
+    display: none;
+    align-items: center;
+    
+}
+
+.header-content nav ul#user-information li i{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+nav ul#user-information li{
+    position: relative;
+    margin: 0 8px;
+}
+
+nav ul#user-information .carts-product{
+    position: absolute;
+    width: 200px;
+    transform: translate(-42% , 0);
+    background-color: #eaeaea;
+    top: 46px;
+    padding: 10px;
+    border: 1px solid green;
+    display: none;
+
+}
+nav ul#user-information .carts-product a{
+    display: block;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: darkgreen;
+    text-decoration: none;
+    padding: 6px;
+
+}
+.header-content nav ul#user-information li .padge{
+    width: 20px;
+    height: 20px;
+    background-color: crimson;
+    color: #fff;
+    text-align: center;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: -9px;
+    right: -11px;
+    font-size: 10px;
+    line-height: 20px;
+    display: none;
+
+}
+
+.header-content nav ul li a{
+    display: block;
+    color: #fff;
+    min-width: 50px;
+    /* text-decoration: none; */
+    padding: 5px;
+    margin: 0 5px;
+
+
+
+}
+
+
+/* ****************************form ******************** */
+.section-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 40%;
+    text-align: center;
+    background-color: #bc6ff1;
+    padding: 20px;
+
+
+}
+.section-form h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #52057b;
+}
+.section-form form {
+    
+}
+
+.section-form form input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+
+}
+.section-form form input[type=submit]{
+    font-size: 25px;
+    text-transform: uppercase;
+    height: auto;
+    cursor: pointer;
+
+}
+.section-form form input[type=submit]:hover{
+    opacity: 0.8;
+}
+
+
+
+/*  ************************* products ***************  */
+
+.products{
+    width: 60%;
+    margin: 10px 0;
+
+}
+.product-item{
+    display: flex;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 9px;
+    min-height: 150px;
+
+}
+
+.product-item-img{
+    width: 25%;
+    margin-right: 10px;
+}
+.product-item-actions{
+    flex: 1;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.product-item-actions .add-to-cart{
+    display: block;
+    margin-left: auto;
+    background-color: darkgreen;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    
+}
+.product-item-actions .favourite{
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    margin-left: auto;
+}
